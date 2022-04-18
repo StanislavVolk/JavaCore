@@ -34,6 +34,5 @@ public class Main
     {
         ArrayList<T> alt = new ArrayList<>(Arrays.asList(arr));
         System.out.println(alt);
-
     }
 }

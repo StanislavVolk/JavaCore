@@ -31,7 +31,6 @@ import java.util.ArrayList;
             for(int i=0;i<amount;i++)
             {
                 box.add(fruit);
-
             }
         }
     }
