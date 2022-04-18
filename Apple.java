@@ -1,7 +1,5 @@
 package Lesson_3;
 
-
-
 public class Apple extends Fruit
 {
     @Override
