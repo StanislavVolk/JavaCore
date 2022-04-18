@@ -64,7 +64,8 @@ class Directory
             phoneNumber = directoryHm.get(surname);
             phoneNumber.add(phone_number);
             directoryHm.put(surname, phoneNumber);
-        } else
+        }
+        else
         {
             phoneNumber = new ArrayList<>();
             phoneNumber.add(phone_number);
