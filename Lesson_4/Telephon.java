@@ -44,6 +44,7 @@ public class Telephon
         System.out.println(directory.get("Александра Климова"));
     }
 
+
     public static void main(String[] args)
     {
         Zadacha1();
