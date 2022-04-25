@@ -1,29 +1,27 @@
 package Lesson_5;
-
-import java.io.ByteArrayInputStream;
-import java.io.File;
-
+// Задание не доработанно, а точнее даже не начато.
+// Пока просто игрался с возможными вариантами, очень интересно, но не успеваю из-за работы...
+import java.io.*;
 public class Main
 {
     public static void main(String[] args)
     {
         File file = new File("src/main/java/Lesson_5/test.txt");
 
-        byte [] outData = {10, 20, 30, 40};
 
-        ByteArrayInputStream in = new ByteArrayInputStream(outData);
-
-        int someValue;
-        int c = 0;
-
-        while ((someValue = in.read()) != -1)
+        try (BufferedReader reader = new BufferedReader(new FileReader(file)))
         {
-            c++;
-            System.out.println(someValue +" "+ c);
-        }
+            String str;
+            while ((str = reader.readLine()) != null)
+            {
+                System.out.println(str);
+            }
 
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
     }
 
-    //File file = new File()
 }
